@@ -1,0 +1,21 @@
+# Exposure IQ
+
+> A high-precision exposure calculation engine (APEX-CAL™) for professional DSLR and mirrorless photography.
+
+## Core Purpose
+Exposure IQ is a technical utility designed for manual photographers. It replaces guesswork with clinical physics, utilizing the Additive System of Photographic Exposure (APEX) to calculate optimal ISO, Aperture, and Shutter Speed values.
+
+## Pricing & Trial Details
+- **Free Trial:** 3-day full-access trial on all subscription tiers.
+- **Monthly Subscription:** $1.99 USD
+- **Annual Subscription:** $14.99 USD (Best Value)
+
+## Technical Specifications
+- **Core Engine:** APEX-CAL™ (High-precision mathematical exposure model)
+- **Target Hardware:** Digital SLR and Mirrorless cameras (Manual Mode)
+- **Privacy Standards:** 100% On-device processing. No data collection, no tracking, and no cloud-dependency.
+
+## Key Resources
+- [Technical Manifesto](https://ajhermann94.github.io/exposure-iq/) : The primary technical documentation and landing page.
+- [Privacy Policy](https://ajhermann94.github.io/exposure-iq/#privacy) : Official disclosure of zero-data-collection policy.
+- [Developer Support](https://github.com/ajhermann94) : Direct link for technical inquiries and feedback.
