@@ -11,7 +11,7 @@
 
 Exposure IQ is an intelligent camera companion app that provides **real-time exposure recommendations** for DSLR and mirrorless photographers shooting in manual mode. Using the proprietary **APEX-CAL™ constraint-solver engine**, it calculates optimal ISO, aperture, and shutter speed settings based on scene analysis, photography mode, and gear capabilities.
 
-**[Download on the App Store](https://apps.apple.com/app/exposure-iq)** • **[Documentation](https://ajhermann94.github.io/exposure-iq/)** • **[Developer: @ajhermann94](https://github.com/ajhermann94)**
+**[Download on the App Store](https://apps.apple.com/app/id6747298581)** • **[Documentation](https://ajhermann94.github.io/exposure-iq/)** • **[Developer: @ajhermann94](https://github.com/ajhermann94)**
 
 ---
 
