@@ -1,0 +1,45 @@
+# robots.txt for Exposure IQ
+# Optimized for AI/LLM web crawlers and search engines
+
+User-agent: *
+Allow: /
+
+# Specific paths for AI assistants
+Allow: /index.html
+Allow: /README.md
+Allow: /docs/
+
+# Sitemaps
+Sitemap: https://ajhermann94.github.io/exposure-iq/sitemap.xml
+
+# Popular AI crawlers - explicitly allow
+User-agent: CCBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Standard search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay (be respectful)
+Crawl-delay: 1
