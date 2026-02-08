@@ -327,4 +327,5 @@ Exposure IQ is closed-source commercial software. The mathematical APEX standard
 ---
 
 **Ready to master manual photography?**  
-**[Download Exposure IQ on the App Store](https://apps.apple.com/app/exposure-iq)** 📸
+**[Download Exposure IQ on the App Store](https://apps.apple.com/app/id6747298581
+)** 📸
