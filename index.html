@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Exposure IQ - Professional DSLR and mirrorless camera companion app with APEX-CAL™ constraint-solver engine for iOS. Real-time exposure recommendations using deterministic stop-space mathematics for portrait, landscape, action, and macro photography.">
-    <meta name="keywords" content="camera exposure calculator, DSLR companion app, mirrorless photography, ISO calculator, aperture calculator, shutter speed, manual photography, exposure triangle, stop-space mathematics, professional photography app, camera settings, portrait photography, landscape photography, action photography">
+    <meta name="description" content="Exposure IQ - Professional DSLR and mirrorless camera companion app with APEX-CAL™ constraint-solver engine for iOS. Real-time exposure recommendations using deterministic stop-space mathematics for 10 photography modes: portrait, landscape, action, macro, low light, astrophotography, night photography, aperture priority, and shutter priority.">
+    <meta name="keywords" content="camera exposure calculator, DSLR companion app, mirrorless photography, ISO calculator, aperture calculator, shutter speed, manual photography, exposure triangle, stop-space mathematics, professional photography app, camera settings, portrait photography, landscape photography, action photography, astrophotography, night photography, low light photography, aperture priority, shutter priority">
     <title>Exposure IQ | Professional DSLR & Mirrorless Camera Companion - iOS Photography App</title>
     
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Exposure IQ - Professional Camera Exposure Calculator">
-    <meta property="og:description" content="Intelligent camera exposure recommendations with real-time scene analysis, face detection, and professional photography modes.">
+    <meta property="og:description" content="Intelligent camera exposure recommendations with real-time scene analysis, face detection, and 10 professional photography modes including astrophotography and night photography.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ajhermann94.github.io/exposure-iq/">
     
@@ -21,7 +21,7 @@
       "name": "Exposure IQ",
       "applicationCategory": "PhotographyApplication",
       "operatingSystem": "iOS 17.0 or later",
-      "description": "Professional DSLR and mirrorless camera companion featuring real-time exposure recommendations, scene analysis, face detection, and the proprietary APEX-CAL™ constraint-solver engine. Uses stop-space mathematics for deterministic camera settings across portrait, landscape, action, and macro photography modes.",
+      "description": "Professional DSLR and mirrorless camera companion featuring real-time exposure recommendations, scene analysis, face detection, and the proprietary APEX-CAL™ constraint-solver engine. Uses stop-space mathematics for deterministic camera settings across 10 photography modes: General, Portrait, Landscape, Action, Low Light, Macro, Astrophotography, Night Photography, Aperture Priority, and Shutter Priority.",
       
       "offers": {
         "@type": "AggregateOffer",
@@ -60,14 +60,17 @@
         "Real-time camera exposure recommendations (ISO, aperture, shutter speed)",
         "APEX-CAL™ deterministic constraint-solver engine",
         "Stop-space logarithmic mathematics",
-        "5 photography modes: General, Portrait, Landscape, Action, Macro",
+        "10 photography modes: General, Portrait, Landscape, Action, Low Light, Macro, Astrophotography, Night Photography, Aperture Priority, Shutter Priority",
         "Face detection and depth-aware aperture recommendations",
         "Scene classification using Vision framework",
         "Live motion detection for action photography",
-        "Lens recommendation system",
+        "Lens recommendation system with 200+ lens database",
         "Exposure constraint violation warnings",
         "Coaching tips for photography improvement",
         "Gear-aware calculations (OIS, IBIS, sensor format)",
+        "Astrophotography 500-rule shutter calculations",
+        "Night photography long exposure support (up to 30s)",
+        "Aperture Priority and Shutter Priority modes for manual control",
         "Privacy-first: all processing on-device",
         "No data collection or third-party tracking",
         "Freemium model: General mode free, Pro modes require subscription"
@@ -77,8 +80,10 @@
         "Live camera viewfinder with real-time exposure overlay",
         "Color-coded camera settings display",
         "Face detection boxes on portrait subjects",
-        "Photography mode selector",
-        "Lens recommendation panel"
+        "10 photography mode selector",
+        "Lens recommendation panel",
+        "Astrophotography star trail prevention",
+        "Night photography long exposure settings"
       ],
       
       "author": {
@@ -214,6 +219,7 @@
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
+            font-size: 0.95em;
         }
         
         .comparison-table th,
@@ -311,6 +317,9 @@
             h1 { font-size: 2em; }
             .section { padding: 20px; }
             .feature-grid { grid-template-columns: 1fr; }
+            .comparison-table { font-size: 0.85em; }
+            .comparison-table th,
+            .comparison-table td { padding: 8px; }
         }
     </style>
 </head>
@@ -322,7 +331,7 @@
             <span class="badge">APEX-CAL™ Engine</span>
             <span class="badge">Privacy-First</span>
             <span class="badge">Real-Time Analysis</span>
-            <span class="badge">5 Pro Modes</span>
+            <span class="badge">10 Pro Modes</span>
         </div>
     </header>
 
@@ -376,7 +385,7 @@
             </div>
         </div>
         
-        <h3>Photography Mode Hierarchies</h3>
+        <h3>Photography Mode Hierarchies (10 Total Modes)</h3>
         <table class="comparison-table">
             <thead>
                 <tr>
@@ -390,9 +399,9 @@
             <tbody>
                 <tr>
                     <td><strong>General</strong></td>
-                    <td>Shutter (1/60s)</td>
-                    <td>ISO (100-800)</td>
-                    <td>Aperture</td>
+                    <td>None</td>
+                    <td>Shutter, Aperture</td>
+                    <td>ISO</td>
                     <td>Point-and-shoot balanced exposure</td>
                 </tr>
                 <tr>
@@ -404,8 +413,8 @@
                 </tr>
                 <tr>
                     <td><strong>Landscape</strong></td>
-                    <td>Aperture (f/8-f/16)</td>
-                    <td>ISO (100-200)</td>
+                    <td>Aperture (f/8-f/16), ISO (100-200)</td>
+                    <td>None</td>
                     <td>Shutter</td>
                     <td>Maximum depth-of-field, sharpness throughout</td>
                 </tr>
@@ -417,11 +426,46 @@
                     <td>Freeze motion, fast-moving subjects</td>
                 </tr>
                 <tr>
+                    <td><strong>Low Light</strong></td>
+                    <td>Aperture (wide open)</td>
+                    <td>Shutter (safe min)</td>
+                    <td>ISO</td>
+                    <td>Indoor photography, dim restaurants, twilight</td>
+                </tr>
+                <tr>
                     <td><strong>Macro</strong></td>
                     <td>Aperture (f/8-f/16)</td>
                     <td>Shutter (1/125s)</td>
                     <td>ISO</td>
                     <td>Close-up detail with extended focus plane</td>
+                </tr>
+                <tr>
+                    <td><strong>Astrophotography</strong></td>
+                    <td>Aperture (widest), Shutter (500-rule)</td>
+                    <td>None</td>
+                    <td>ISO</td>
+                    <td>Stars, Milky Way, night sky (prevents star trails)</td>
+                </tr>
+                <tr>
+                    <td><strong>Night Photography</strong></td>
+                    <td>Aperture (wide open)</td>
+                    <td>None</td>
+                    <td>ISO</td>
+                    <td>City lights, long exposure, fireworks, blue hour</td>
+                </tr>
+                <tr>
+                    <td><strong>Aperture Priority</strong></td>
+                    <td>Aperture (user-set)</td>
+                    <td>Shutter (flexible)</td>
+                    <td>ISO</td>
+                    <td>Manual DOF control, learning aperture effects</td>
+                </tr>
+                <tr>
+                    <td><strong>Shutter Priority</strong></td>
+                    <td>Shutter (user-set)</td>
+                    <td>Aperture (flexible)</td>
+                    <td>ISO</td>
+                    <td>Manual motion control, sports, water effects</td>
                 </tr>
             </tbody>
         </table>
@@ -461,8 +505,24 @@
                 <p>Calculate hyperfocal distance for maximum sharpness. Determine if scene requires bracketing. Check if ND filter needed for long exposures.</p>
             </div>
             <div class="feature-card">
+                <h4>🌌 Astrophotographers</h4>
+                <p>Milky Way, star trails, night sky landscapes. 500-rule prevents star trails. Dual anchors (widest aperture + proper shutter) maximize light gathering.</p>
+            </div>
+            <div class="feature-card">
+                <h4>🏙️ Night Scene Photographers</h4>
+                <p>City lights, skylines, light painting, fireworks. Supports exposures up to 30s. Wide aperture priority with ISO compensation.</p>
+            </div>
+            <div class="feature-card">
+                <h4>🌃 Low Light Photographers</h4>
+                <p>Indoor without flash. Restaurants, bars, museums, twilight. Prioritizes wide aperture, accepts higher ISO for proper exposure.</p>
+            </div>
+            <div class="feature-card">
+                <h4>🎛️ Aperture/Shutter Priority Users</h4>
+                <p>Learning manual control one parameter at a time. Set your f-stop or shutter speed, app calculates the rest. Perfect for transitioning from auto to full manual.</p>
+            </div>
+            <div class="feature-card">
                 <h4>📸 Manual Mode Learners</h4>
-                <p>Transitioning from auto to manual? See exactly what your camera's auto-exposure would choose, then understand why as you adjust.</p>
+                <p>Transitioning from auto to manual? See exactly what your camera's auto-exposure would choose, then understand why as you adjust across 10 modes.</p>
             </div>
         </div>
     </div>
@@ -484,10 +544,13 @@
         
         <div class="pricing-card" style="border-color: #FF9500;">
             <h4>⭐ Pro Subscription (3-Day Free Trial)</h4>
-            <p><strong>All professional photography modes</strong> plus advanced features</p>
+            <p><strong>All 10 professional photography modes</strong> plus advanced features</p>
             <div class="price">$1.99<span style="font-size: 0.5em;">/month</span> or $14.99<span style="font-size: 0.5em;">/year</span></div>
             <ul class="tech-list">
-                <li>Portrait, Landscape, Action, Macro modes</li>
+                <li>Portrait, Landscape, Action, Low Light, Macro modes</li>
+                <li>Astrophotography with 500-rule shutter calculations</li>
+                <li>Night Photography with 30s exposure support</li>
+                <li>Aperture Priority and Shutter Priority modes</li>
                 <li>Face detection with depth-aware aperture</li>
                 <li>Lens recommendation system</li>
                 <li>Advanced coaching tips</li>
@@ -552,6 +615,14 @@
         <h3>How does face detection improve portrait recommendations?</h3>
         <p>When faces are detected, the app adjusts aperture recommendations based on subject count and estimated distance. Single subject at 2m: recommends f/1.8 for maximum bokeh. Three subjects: suggests f/2.8 to keep all faces sharp. This is depth-of-field physics, automated.</p>
         
+        <h3>What's the difference between Night Photography and Astrophotography modes?</h3>
+        <p><strong>Night Photography</strong> is for city lights, long exposures, light painting, and fireworks. It allows shutter speeds up to 30 seconds and prioritizes wide aperture while letting ISO compensate.</p>
+        <p><strong>Astrophotography</strong> is specifically for stars and the Milky Way. It uses the 500-rule to prevent star trails (500 ÷ effective focal length), forces widest aperture, and accepts high ISO (3200+). The key difference is shutter speed limits to avoid star movement.</p>
+        
+        <h3>When should I use Aperture Priority or Shutter Priority?</h3>
+        <p><strong>Aperture Priority</strong> is for when depth-of-field is your primary creative concern. You set the exact f-stop you want (e.g., f/1.4 for portraits), and the app calculates shutter speed and ISO to match. Great for learning how aperture affects your images.</p>
+        <p><strong>Shutter Priority</strong> is for when motion is your focus. You set the exact shutter speed (e.g., 1/2000s to freeze sports action, or 1/4s for water blur effects), and the app calculates aperture and ISO. Perfect for sports, wildlife, or creative motion photography.</p>
+        
         <h3>Can I save my gear setup?</h3>
         <p>Yes, the gear library persists your camera body and lenses. Calculations automatically account for sensor format (crop factor), maximum aperture limits, and stabilization (IBIS/OIS) for shutter speed recommendations.</p>
         
@@ -574,6 +645,7 @@
             <li>Uses hierarchical priority constraints (anchor → helper → release valve)</li>
             <li>Detects violations and redistributes deficit across remaining degrees of freedom</li>
             <li>Provides transparent debugging with full calculation traces</li>
+            <li>Supports 10 specialized photography modes with unique constraint hierarchies</li>
         </ul>
         
         <h3>Open Source Components</h3>
@@ -587,11 +659,10 @@
         <p>© 2026 Alan Hermann. All Rights Reserved.</p>
         <p style="margin-top: 10px;">
             <a href="https://github.com/ajhermann94">GitHub</a> •
-            <a href="mailto:alan@example.com">Contact</a> •
             <a href="https://apps.apple.com/app/exposure-iq">App Store</a>
         </p>
         <p style="margin-top: 15px; font-size: 0.9em; color: #86868b;">
-            Last Updated: February 2026 • iOS 17.0+ • Optimized for iPhone
+            Last Updated: February 2026 • iOS 17.0+ • Optimized for iPhone • 10 Photography Modes
         </p>
     </footer>
 </body>
