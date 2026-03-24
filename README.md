@@ -139,7 +139,7 @@ If anchor constraint is violated (e.g., f/1.4 needed but lens only goes to f/1.8
 - Optional: Location permissions (for solar angle feature)
 
 ### Download
-**[Get Exposure IQ on the App Store](https://apps.apple.com/app/exposure-iq)**
+**[Get Exposure IQ on the App Store](https://apps.apple.com/app/id6747298581)**
 
 ### Quick Start
 1. Launch app and grant camera permissions
@@ -153,26 +153,29 @@ If anchor constraint is violated (e.g., f/1.4 needed but lens only goes to f/1.8
 
 ---
 
-## 💰 Pricing & Business Model
-
-**Freemium with 3-Day Trial**
+## 💰 Pricing
 
 ### Free Forever
 - **General photography mode** with full exposure calculations
 - Real-time recommendations (ISO, aperture, shutter)
 - Basic scene analysis
+- 1 camera body + 1 lens in gear library
 - No ads, no data collection
 
-### Pro Subscription
-- **$1.99/month** or **$14.99/year** (37% savings)
-- **3-day free trial** with all Pro features unlocked
-- Includes:
+### Pro — $12.99 (One-Time Purchase)
+- **Single payment, no subscription, no renewal**
+- Family Sharing enabled — one purchase covers your whole family
+- Includes everything, forever:
   - Portrait, Landscape, Action, Low Light, Macro, Astrophotography, Night Photography, Aperture Priority, Shutter Priority modes
   - Face detection with depth-aware aperture
   - Lens recommendation system
   - Solar angle calculator
+  - Live histogram
+  - Depth of field overlay
+  - Creative styles (Bright, Moody, Vivid, Cinematic, Soft)
   - Advanced coaching tips
-  - Gear library management
+  - Full gear library management
+  - Pro overlays (grid, horizon level, face boxes)
 
 ---
 
@@ -271,6 +274,9 @@ A: **Night Photography** is for city lights, long exposures, light painting. All
 **Q: When should I use Aperture Priority or Shutter Priority?**  
 A: **Aperture Priority** when depth-of-field is your creative focus. **Shutter Priority** when motion control is your goal. Both let you learn manual exposure by controlling one parameter.
 
+**Q: Is there a subscription?**  
+A: No. Pro is a one-time $12.99 purchase. No monthly fees, no annual renewals. Buy once, use forever. Family Sharing included.
+
 ---
 
 ## 🛠️ Development
@@ -297,6 +303,11 @@ Exposure IQ represents a **complete architectural rewrite** (January 2025):
 - Debounced UI updates from 60ms → 300ms (smoother rendering)
 - Lazy face detection (only when Portrait mode active)
 - Extended scene brightness change threshold (0.3 EV → 0.5 EV)
+
+### v2.7 (March 2026)
+- Switched from subscription to one-time purchase ($12.99, no subscription)
+- Refreshed App Store screenshots
+- ASO and keyword optimization
 
 ---
 
@@ -327,5 +338,4 @@ Exposure IQ is closed-source commercial software. The mathematical APEX standard
 ---
 
 **Ready to master manual photography?**  
-**[Download Exposure IQ on the App Store](https://apps.apple.com/app/id6747298581
-)** 📸
+**[Download Exposure IQ on the App Store](https://apps.apple.com/app/id6747298581)** 📸
