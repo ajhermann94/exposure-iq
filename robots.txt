@@ -7,6 +7,8 @@ Allow: /
 # Specific paths for AI assistants
 Allow: /index.html
 Allow: /README.md
+Allow: /AI_CONTEXT.md
+Allow: /llms.txt
 Allow: /docs/
 
 # Sitemaps
