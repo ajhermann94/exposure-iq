@@ -6,17 +6,41 @@
   <!-- Main landing page -->
   <url>
     <loc>https://ajhermann94.github.io/exposure-iq/</loc>
-    <lastmod>2026-02-08</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://ajhermann94.github.io/exposure-iq/privacy.html</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <!-- Documentation -->
   <url>
     <loc>https://ajhermann94.github.io/exposure-iq/README.md</loc>
-    <lastmod>2026-02-08</lastmod>
+    <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- AI Assistant Context -->
+  <url>
+    <loc>https://ajhermann94.github.io/exposure-iq/AI_CONTEXT.md</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- LLM Discovery -->
+  <url>
+    <loc>https://ajhermann94.github.io/exposure-iq/llms.txt</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   
 </urlset>
